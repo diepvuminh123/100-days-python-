@@ -14,7 +14,8 @@ tip1 = int(tip) / 100
 print(tip1)  # Test the calculation result
 
 # Calculate the total amount each person needs to pay after adding the tip
-finalmoney = round((money * tip1) + money1, 2)
+finalmoney1 = round((money * tip1) + money1, 2)
+finalmoney="finalmoney1:{:.2f}".format( finalmoney1 )
 print(finalmoney)  # Test the calculation result
 
 # Print the amount each person needs to pay

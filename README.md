@@ -1,6 +1,7 @@
 # 100-days-python-
 basic - intermediate 
-#Project2
+
+Project2
 Instructions
 If the bill was $150.00, split between 5 people, with 12% tip.
 
