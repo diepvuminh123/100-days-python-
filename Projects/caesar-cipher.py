@@ -12,19 +12,48 @@ def shiftleft(letter ,shift):   #shift left
  return finalleter
 
 final=[]
-print("Type 'encode' to encrypt, type 'decode' to decrypt:")
-a="encode"
-if a=="encode": 
-    print("Type the sentence: \n")
-    sentence="abc"
-    print("type the shift: \n")
-    shift=2
-    for i in sentence:
-      j=0
-      final+=shiftright(i,shift)
-# a=shiftleft("a",1) // Test 
+x=bool
+while not x==True:
+ print("Type 'encode' to encrypt, type 'decode' to decrypt:")
+ a=input()
+ 
 
-print("".join(final))
+ if a=="encode": 
+    print("Type your message: \n")
+    sentence=input()
+    print("type the shift number: \n")
+    shift=int(input())
+    for i in sentence:
+        j=0
+        final+=shiftright(i,shift)
+    print(f"here the encode's result: {"".join(final)} \n")
+    print("Type 'yes' if you want to go again. Otherwise type 'no'.")
+    end=input()
+    if end=="yes": 
+       final=[]
+       end=False
+    else:
+        final=[]
+        end=True
+
+# a=shiftleft("a",1) // Test 
+ if a=="decode":
+    print("Type your message: \n")
+    sentence=input()
+    print("type the shift number: \n")
+    shift=int(input())
+    for i in sentence:
+        j=0
+        final+=shiftleft(i,shift)
+    print(f"here the encode's result: {"".join(final)} \n")
+    print("Type 'yes' if you want to go again. Otherwise type 'no'.")
+    end=input()
+    if end=="yes": 
+       final=[]
+       end=False
+    else:
+        final=[]
+        end=True
 # print(a) // Test 
 
 
