@@ -1,15 +1,25 @@
-# #Test lower
-# a=input().lower()
-# print(str(a))
-# #Test while not 
-# x = 0
-# while not x == 5:
-#     print(x)
-#     x += 1
+# import package 
+import turtle 
 
 
-c=input()
-for i in c: 
-    d=c[i+1]
+# check y coordinate 
+print(turtle.ycor()) 
+turtle.forward(100) 
 
+# check y coordinate 
+print(turtle.ycor()) 
+turtle.right(45) 
+turtle.forward(100) 
 
+# check y coordinate 
+print(turtle.ycor()) 
+turtle.right(90) 
+turtle.forward(100) 
+
+# check y coordinate 
+print(turtle.ycor()) 
+turtle.right(45) 
+turtle.forward(100) 
+turtle.exitonclick()
+# check y coordinate 
+print(turtle.ycor())
