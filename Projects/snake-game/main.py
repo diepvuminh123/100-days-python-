@@ -1,10 +1,7 @@
-from screen import mainscreen
-from snake import snake
-#set up the screen 
-screen=mainscreen(600,600,"black")
-screen.setscreen()
-#set up the snake 
-snake=snake("triangle","red")
+from mainsnake import Main
+snake1 = Main()
 
-
-
+snake1.setscreen(600, 600, "black")
+snake1.setsnake("square", "white")
+# Keep the window open until clicked
+snake1.sc.exitonclick()
